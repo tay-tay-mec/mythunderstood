@@ -1,0 +1,155 @@
+:root{
+    --base-color: #e3b5c0;
+    --text-color: #53191e;
+    --primary-color: #ffdede;
+    --accent-color: #c185dd;
+    --second-text-color: #a83b91;
+}
+
+.darkmode{
+    --base-color: #2c281c;
+    --text-color: #1b0a0b;
+    --primary-color:#4d3113;
+    --accent-color: #2b462b;
+    --second-text-color: #92734d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+h1, h2{
+    color: var(--second-text-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav{
+    background-color: var(--base-variant);
+    color: var(--text-color);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+nav a:hover{
+    color: var(--text-text);
+    text-decoration: none;
+}
+
+nav button{
+    float: right;
+    margin-top: -7px;
+}
+.banner img{
+    width: 50%;
+    height: 50%;
+}
+
+.footer img{
+    width: 20%;
+    height: 20%;
+}
+
+main{
+    padding-bottom: 100px;
+}
+
+footer{
+    padding-top: 30px;
+    background-color: var(--primary-color);
+}
+
+.titles img{
+    height: 40%;
+    width: 40%;
+    align-self: center;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+@media (max-width: 1092px) {
+    .titles img{
+        height: 60%;
+        width: 60%;
+        align-self: center;
+    } 
+    p{
+        text-align: center;
+        margin-left: 80px;
+        padding-right: 80px;
+    }
+
+    .banner img{
+        width: 70%;
+        height: 70%;
+    }
+    
+    .footer img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .titles img{
+        height: 90%;
+        width: 90%;
+        align-self: center;
+    }
+
+
+    .banner img{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .footer img{
+        width: 60%;
+        height: 60%;
+    }
+}
